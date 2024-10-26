@@ -10,6 +10,9 @@
   #projects {
     height: fit-content;
   }
+  .menu button p {
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -44,6 +47,10 @@
   }
   .about-containers {
     margin-top: 0;
+  }
+
+  .menu button p {
+    font-size: 17px;
   }
 }
 
@@ -99,5 +106,13 @@
   }
   .text-container {
     text-align: justify;
+  }
+
+  .menu button p {
+    font-size: 15px;
+  }
+
+  .containerr {
+    width: 420px;
   }
 }

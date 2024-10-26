@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
   </head>
-  <b>
+  <body>
+	
     <nav id="desktop-nav">
       <div class="logo">Profile</div>
       <div>
@@ -19,11 +20,12 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div class="dark-mode">
-        <button id="toggle-button" class="img-dark">☀️</button>
-      </div>
+      
     </nav>
+	 
     <nav id="hamburger-nav">
+		
+		
       <div class="logo">Profile</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
@@ -36,21 +38,34 @@
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+			 
         </div>
+		  
       </div>
+		
+		
     </nav>
+	 
+<div class="dark-mode">
+        <button id="toggle-button" class="img-dark">☀️</button>
+      </div>
 
       <div class="menu">
+			
         <div class="menu-icon">
           <button onclick="toggleSidebar()"><p>&#9776; menu</p></button>
+			 
         </div>
+		  
       </div>
       <div class="sidebar" id="mySidebar">
+			
         <button onclick="toggleSidebar()"><p>&#10006;</p></button>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
+		  
 
         <div id="socials-container">
           <img

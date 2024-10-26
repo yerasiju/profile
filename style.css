@@ -16,6 +16,11 @@ body.dark-mode {
   background-color: #000022;
   color: #b0b0b0;
 }
+
+.dark-mode .hamburger-icon span {
+  background-color: white;
+}
+
 .dark-mode a {
   color: #ffffff;
 }
