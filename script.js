@@ -21,11 +21,6 @@ toggleButton.addEventListener("click", () => {
   }
 });
 
-function toggleSidebar() {
-  var sidebar = document.getElementById("mySidebar");
-  sidebar.classList.toggle("show");
-}
-
 function sendToWhatsapp() {
   let number = "+77022766797";
 
@@ -48,4 +43,22 @@ function sendToWhatsapp() {
     "%0a%0a";
 
   window.open(url, "_blank").focus();
+}
+
+function sendToWhatsapp() {
+  let name = document.querySelector("name").value;
+  let email = document.querySelector("email").value;
+  let message = document.querySelector("message").value;
+
+  let url =
+    "https://wa.me/" +
+    number +
+    "?text=" +
+    "Name :" +
+    name +
+    "Email :" +
+    email +
+    "Message :" +
+    message +
+    "%0a%0a";
 }

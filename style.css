@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Glory:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
   margin: 0;
@@ -6,15 +6,34 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #829fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+p {
+  color: white;
 }
 
 /* DARK MODE */
 /* DARK MODE */
 body.dark-mode {
   background-color: #000022;
-  color: #b0b0b0;
+}
+
+.dark-mode .logo {
+  color: white;
+}
+
+.dark-mode h1,
+h3 {
+  color: white;
+}
+.dark-mode .experience-sub-title {
+  color: rgb(230, 230, 230);
+}
+
+.dark-mode p {
+  color: rgb(204, 204, 204);
 }
 
 .dark-mode .hamburger-icon span {
@@ -25,8 +44,8 @@ body.dark-mode {
   color: #ffffff;
 }
 .dark-mode .btn {
-  background-color: #444;
-  color: #fff;
+  background-color: white;
+  color: rgb(0, 0, 0);
   border-color: #fff;
 }
 .dark-mode .icon {
@@ -34,7 +53,7 @@ body.dark-mode {
 }
 
 .dark-mode .details-container {
-  background-color: #001e48;
+  background-color: #002150;
 }
 
 .dark-mode .experience-sub-title-project-title {
@@ -82,7 +101,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(33, 33, 33);
 }
 
 /* TRANSITION */
@@ -131,10 +150,6 @@ a:hover {
 
 .logo:hover {
   cursor: default;
-}
-
-.dark-mode {
-  margin-top: 12px;
 }
 
 .dark-mode button {
@@ -241,7 +256,7 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  height: 65vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -256,7 +271,7 @@ section {
 #profile {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 2rem;
   height: 80vh;
 }
 
@@ -265,10 +280,6 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
-}
-
-.section__pic-container img {
-  border: 10px solid white;
 }
 
 .section__text {
@@ -334,6 +345,10 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
 
+.project-btn {
+  color: white;
+}
+
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
@@ -341,16 +356,16 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: black;
   color: white;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: rgb(149, 149, 149);
 }
 
 .btn-color-2 {
-  background: none;
+  background: rgb(255, 255, 255);
 }
 
 .btn-color-2:hover {
@@ -359,6 +374,17 @@ section {
 
 .btn-container {
   gap: 1rem;
+}
+.btn-btn-color-2 {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  transition: 0.3s;
+  border-radius: 30px;
+}
+.btn-btn-color-2:hover {
+  border: 1px solid black;
+  background-color: white;
+  color: rgb(0, 0, 0);
 }
 
 /* ABOUT SECTION */
@@ -421,7 +447,7 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: rgb(0, 0, 0);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -531,71 +557,6 @@ footer p {
   text-align: center;
 }
 
-.sidebar {
-  z-index: 1;
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  top: 0;
-  left: -250px;
-  background-color: #000000;
-  padding-top: 20px;
-  transition: 0.3s;
-}
-
-.sidebar img.icon {
-  filter: invert(100%);
-}
-
-.sidebar a {
-  padding: 10px 15px;
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidebar a:hover {
-  background-color: #5a5a5a;
-}
-
-.sidebar button {
-  display: flex;
-  margin-left: 200px;
-  background-color: #232323;
-  padding: 10px;
-}
-
-.menu {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-}
-
-.menu button {
-  padding: 10px 20px;
-  color: #fff;
-  background: none;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-}
-.menu button p {
-  font-size: 20px;
-}
-
-.menu p {
-  font-size: 15px;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
-/* Show the sidebar */
-.sidebar.show {
-  left: 0;
-}
-
 #toggle-button {
   font-size: 30px;
 
@@ -612,7 +573,7 @@ body .dark-mode .details-container {
 .block3 {
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 37%;
 }
 
 @keyframes appear {
@@ -641,7 +602,7 @@ body .dark-mode .details-container {
 
 .containerr p {
   margin: 1rem 0;
-  color: rgb(85, 85, 85);
+  color: rgb(146, 146, 146);
   font-weight: 600;
 }
 
@@ -670,7 +631,7 @@ textarea:focus {
 }
 
 button {
-  background-color: #2a392d;
+  background-color: black;
   padding: 10px 30px;
   border-radius: 5px;
   color: #fff;
@@ -680,7 +641,7 @@ button {
 }
 
 .containerr button:hover {
-  background-color: #000000;
+  background-color: #1900a5;
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -688,4 +649,8 @@ button {
 .dark-mode .containerr {
   background-color: #001e48;
   color: white;
+}
+
+.section__pic-container .img-prof {
+  border-radius: 0 50px 200px;
 }
