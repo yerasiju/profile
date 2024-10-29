@@ -507,7 +507,6 @@ article .icon {
 /* CONTACT */
 
 #contact {
-  margin-top: 60px;
   display: flex;
   justify-content: center;
   flex-direction: column;
